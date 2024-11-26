@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ai-bg: none;
+  --button-bg: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: blue;
+  word-wrap: break-word;
+}
+
+ul,
+ol {
+  list-style: inside auto;
+  padding: inherit;
+}
+
+br {
+  height: 8px;
+}
+
+hr {
+  margin: 0 0 32px 0;
+}
+
+li::marker {
+  font-weight: 600;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s linear infinite;
+}
+
+MAI_text-area ~ p {
+  margin-bottom: 20px !important;
+}
+
+.mantine-ScrollArea-viewport > div {
+  display: block !important;
+}
+
+@media screen and (max-width: 767px) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+  }
+
+  select:active,
+  input:active,
+  textarea:active {
+    font-size: 16px;
+  }
+
+  select:hover,
+  input:hover,
+  textarea:hover {
+    font-size: 16px;
+  }
+}
+.mantine-Button-root:active {
+  background-color: #53B7FF !important; 
+  border-color: inherit !important;
+}
+.mantine-Button-root:hover {
+  background-color: #53B7FF !important;  
+  border-color: transparent !important;
+}
+.mantine-Button-root:focus {
+  background-color: #53B7FF !important; 
+  border-color: inherit !important;
+}
+--tabs-color: {
+  background-color: #fff !important;   
+  color: #344054 !important;
+}
